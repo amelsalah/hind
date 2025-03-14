@@ -1,0 +1,6 @@
+['|', 
+    ('journal_id.company_id', '=', False), 
+    '|', 
+    ('journal_id.company_id', 'parent_of', company_ids), 
+    ('journal_id.company_id', 'in', user.company_ids.ids)
+]
